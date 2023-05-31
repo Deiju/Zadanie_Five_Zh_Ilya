@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Zadanie_Five.Calculator"
+             Title="Кредитный калькулятор">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Entry x:Name="sum" Placeholder="Введите сумму кредита" HorizontalOptions="FillAndExpand"  />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">                
+                <Entry x:Name="srok" Placeholder="Введите срок(в месяцах)" HorizontalOptions="FillAndExpand"  />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Picker x:Name="picker" HorizontalOptions="FillAndExpand" Title="Выберите вид платежа">
+                    <Picker.Items>
+                        <x:String>Аннуитетный</x:String>
+                        <x:String>Дифференцированный</x:String>
+                    </Picker.Items>
+                </Picker>
+            </StackLayout>
+            <StackLayout>
+                <Label Text="Процентная ставка:" VerticalOptions="Center" FontSize="18" />
+                <Slider x:Name="Slider" Minimum="0" Maximum="100" ValueChanged="SliderValue" MinimumTrackColor="Aqua" MaximumTrackColor="DarkBlue"/>
+                <Label x:Name="LabelSlider" Text="5%"  Margin="20,0,20,0" VerticalTextAlignment="Center" VerticalOptions="Center" HorizontalTextAlignment="Center"/>
+            </StackLayout>
+            <StackLayout>
+                <Label x:Name="myLabelOne" Text="Ежемесячный платеж: ..." VerticalOptions="Center"  FontSize="18"/>
+            </StackLayout>
+            <StackLayout>
+                <Label x:Name="myLabelTwo" Text="Общая сумма: ..." VerticalOptions="Center" FontSize="18"/>
+            </StackLayout>
+            <StackLayout>
+                <Label x:Name="myLabelThree" Text="Переплата: ..." VerticalOptions="Center" FontSize="18"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

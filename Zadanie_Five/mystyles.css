@@ -1,0 +1,31 @@
+^contentpage{
+background-color:black;
+}
+#welcome{
+    font-size:28;
+    font-weight:bold;    
+    color:aliceblue;
+}
+entry { 
+    margin:30,0,30,0;
+    background-color:aliceblue;  
+}
+button {
+    margin: 30,0,30,0;
+    color: White;
+    background-color: red;
+}
+checkbox {
+    margin: 30,0,0,0;
+    color: White;
+
+}
+#forgot {
+    margin: 150,0,0,0;
+    font-size: 12;
+    color: aliceblue;
+}
+#remember {   
+    font-size: 16;
+    color: aliceblue;
+}
